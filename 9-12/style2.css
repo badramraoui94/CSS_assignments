@@ -1,0 +1,26 @@
+div {
+    width: 400px;
+    display: inline-block;
+    background-color: #eee;
+    padding: 20px;
+    margin: 15px;
+    outline: 15px #eee solid;
+    /* font-size: 20px; */
+}
+
+.element-element-1 {
+    border-left: 7px red solid;
+    /* border-color: #eee #eee #eee red; */
+    /* border-radius: 5px; */
+}
+
+.element-element-2 {
+    border: 5px red solid;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.element-element-3 {
+    border-left: 7px rgb(51, 214, 51) solid;
+    /* border-radius: 5px; */
+}

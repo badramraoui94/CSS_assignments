@@ -1,0 +1,36 @@
+div {
+    padding: 15px;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    color: white;
+    background-image: url("css-assignment-5-8.png");
+}
+
+.assign-2-shape-1 {
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.assign-2-shape-2 {
+    background-repeat: repeat-y;
+    background-position: 100%;
+    background-size: 80%;
+}
+
+.assign-2-shape-3 {
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 80%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.assign-2-shape-4 {
+    /* background-repeat: repeat-x; */
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    background-position-y: bottom;
+}
