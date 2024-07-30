@@ -3,6 +3,9 @@ div {
     margin: 16px;
     padding: 20px;
     color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
 }
 
 .assign-1-shape-1 {

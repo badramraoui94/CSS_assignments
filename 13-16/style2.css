@@ -1,0 +1,9 @@
+div {
+    margin: 20px;
+    padding: 15px;
+    color: white;
+    background-color: red;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 40px;
+}

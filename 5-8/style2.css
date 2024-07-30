@@ -14,7 +14,7 @@ div {
 
 .assign-2-shape-2 {
     background-repeat: repeat-y;
-    background-position: 100%;
+    background-position: right bottom;
     background-size: 80%;
 }
 
@@ -22,15 +22,13 @@ div {
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 80%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black;
+    /* border-width: 5px; */
+    /* border-style: solid; */
+    /* border-color: black; */
 }
 
 .assign-2-shape-4 {
-    /* background-repeat: repeat-x; */
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: right;
-    background-position-y: bottom;
+    background-position: right bottom;
 }

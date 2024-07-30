@@ -1,0 +1,13 @@
+a {
+    color: white;
+    background-color: rgb(47, 209, 207);
+    display: block; /* important : block-level respects width and height */
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    align-content: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: auto;
+    border-bottom: solid 5px rgb(9, 110, 105);
+}

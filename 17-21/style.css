@@ -1,0 +1,7 @@
+div {
+    background-color: antiquewhite;
+    padding: 15px;
+    margin: 20px;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 1px 0px red, 3px 2px 0px blue, 4px 3px 0 yellow;
+}
