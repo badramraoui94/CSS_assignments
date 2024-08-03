@@ -28,3 +28,21 @@ table thead td{
     color: white;
     font-weight: bold;
 }
+
+table tbody td div {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin: auto;
+    /* height: 10px; */
+}
+
+.view {
+    background-color: rgb(102, 102, 234);
+    width: 40px;
+}
+
+.del {
+    background-color: red;
+    width: 60px;
+}
