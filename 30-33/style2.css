@@ -1,0 +1,42 @@
+div {
+    width: 400px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #eee;
+    padding: 25px;
+    text-align: center;
+    border: solid 2px;
+    border-color: red dodgerblue;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    background-color: dodgerblue;
+    padding: 5px 15px;
+    color: white;
+}
+
+.top-left {
+    top: -94px;
+    left: -275px;
+    border-right: solid 2px red;
+}
+
+.top-right {
+    top: -94px;
+    right: -94px;
+    border-left: solid 2px red;
+}
+
+.bottom-left {
+    bottom: -40px;
+    left: -317px;
+    border-right: solid 2px red;
+}
+
+.bottom-right {
+    bottom: -40px;
+    right: -51px;
+    border-left: solid 2px red;
+}

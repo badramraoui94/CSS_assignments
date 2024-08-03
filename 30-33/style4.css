@@ -1,0 +1,30 @@
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+table {
+    width: 700px;
+    margin: auto;
+    display: table;
+    border: 0px solid;
+    text-align: center;
+}
+
+table td {
+    padding: 15px;
+    background-color: #eee;
+}
+
+table thead td{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
