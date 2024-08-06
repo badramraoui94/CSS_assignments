@@ -16,10 +16,11 @@ table {
     display: table;
     border: 0px solid;
     text-align: center;
+    overflow: hidden;
 }
 
 table td {
-    padding: 15px;
+    padding: 20px;
     background-color: #eee;
 }
 
@@ -34,6 +35,9 @@ table tbody td div {
     color: white;
     font-size: 15px;
     margin: auto;
+    height: 10px;
+    padding-top: 5px;
+    text-align: center;
     /* height: 10px; */
 }
 
@@ -43,6 +47,18 @@ table tbody td div {
 }
 
 .del {
-    background-color: red;
-    width: 60px;
+    background-color: rgb(227, 34, 89);
+    width: 55px;
+}
+
+.control {
+    width: 200px;
+}
+
+.name {
+    width: 200px;
+}
+
+tbody td {
+    height: 60px;
 }

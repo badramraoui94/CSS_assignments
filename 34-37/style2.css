@@ -1,0 +1,23 @@
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    width: 400px;
+    height: 60px;
+    margin: auto;
+    background-color: #ddd;
+    padding-top: 30px;
+    text-align: center;
+}
+
+div::first-letter {
+    display: inline-block;
+    position: absolute;
+    padding: 25px 15px;
+    background-color: red;
+    color: white;
+    left: 10px;
+    top: 10px;
+}~
