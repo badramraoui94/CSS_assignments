@@ -1,0 +1,46 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px
+}
+
+* {
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.parent {
+    width: 500px;
+    height: 250px;
+    margin:  30px auto;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: .5s linear .5s;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear .5s;
+    -ms-transition: .5s linear .5s;
+    -o-transition: .5s linear .5s;
+}
+
+.child {
+    background-color: #ddd;
+    width: 450px;
+    padding: 20px;
+    margin: 15px 5px;
+    position: absolute;
+    display: block;
+}
+
+.parent:hover {
+    margin-top: 10px;
+}
+
+.parent:hover .child{
+    bottom: 85px;
+    transition: linear 2.5s;
+    -webkit-transition: linear 2.5s;
+    -moz-transition: linear 2.5s;
+    -ms-transition: linear 2.5s;
+    -o-transition: linear 2.5s;
+}
