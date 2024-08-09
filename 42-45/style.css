@@ -16,11 +16,7 @@ html {
     padding: 20px;
     text-align: center;
     position: relative;
-    transition: .5s linear .5s;
-    -webkit-transition: .5s linear;
-    -moz-transition: .5s linear .5s;
-    -ms-transition: .5s linear .5s;
-    -o-transition: .5s linear .5s;
+    transition: .5s linear;
 }
 
 .child {
@@ -30,6 +26,7 @@ html {
     margin: 15px 5px;
     position: absolute;
     display: block;
+    transition: .5s linear .5s;
 }
 
 .parent:hover {
@@ -37,10 +34,6 @@ html {
 }
 
 .parent:hover .child{
-    bottom: 85px;
-    transition: linear 2.5s;
-    -webkit-transition: linear 2.5s;
-    -moz-transition: linear 2.5s;
-    -ms-transition: linear 2.5s;
-    -o-transition: linear 2.5s;
+    background-color: aqua;
+    margin-top: 50px;
 }

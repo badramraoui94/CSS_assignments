@@ -1,0 +1,27 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: #eee !important;
+    border-color: #eee !important;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    color: #eee !important;
+    font-size: 20px !important;
+    position: relative;
+}
+
+div::before {
+    content: "Biba Khawa";
+    background-color: #eee;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+}
