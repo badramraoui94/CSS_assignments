@@ -1,0 +1,69 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --divPadding: 13px;
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas: 
+    "head head head head head head head"
+    "sec sec sec sec sec as as"
+    "fot fot fot fot fot fot fot";
+  height: 100vh;
+}
+
+header {
+  grid-area: head;
+  background-color: blue;
+  padding: var(--divPadding);
+}
+
+header::after {
+  content: "header";
+  color: white;
+}
+
+section {
+  grid-area: sec;
+  /* background-color: red; */
+  padding: var(--divPadding);
+}
+
+section::after {
+  content: "section";
+  color: white;
+}
+
+aside {
+  grid-area: as;
+  background-color: black;
+  padding: var(--divPadding);
+}
+
+aside::after {
+  content: "aside";
+  color: white;
+}
+
+footer {
+  grid-area: fot;
+  background-color: yellow;
+  padding: var(--divPadding);
+}
+
+footer::after {
+  content: "footer";
+  color: white;
+}

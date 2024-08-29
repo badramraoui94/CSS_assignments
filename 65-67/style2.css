@@ -1,0 +1,35 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px;
+  border: solid 10px rgb(255, 71, 71);
+  border-left: solid 10px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div::before{
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  height: 200px;
+  width: 200px;
+  border-radius: 110px;
+  border: 10px rgb(85, 85, 255) solid;
+  border-right: solid 10px white;
+}

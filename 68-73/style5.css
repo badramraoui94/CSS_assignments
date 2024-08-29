@@ -1,0 +1,58 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  perspective: 800px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s linear;
+}
+
+div::before {
+  content: "Front";
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div::after {
+  content: "Back";
+  position: absolute;
+  background-color: rgb(62, 62, 255);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: rotateY(180deg); for side flipping */
+  transform: rotateX(180deg);
+  backface-visibility: hidden;
+}
+
+div:hover {
+  /* transform: rotateY(180deg); for side flipping */
+  transform: rotateX(180deg);
+}

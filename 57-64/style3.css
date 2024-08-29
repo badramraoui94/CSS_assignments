@@ -1,0 +1,31 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 25px;
+  grid-template-columns: 15px repeat(2, 1fr) 15px;
+  gap: 20px;
+  justify-content: center ;
+}
+
+.grid div {
+  background-color: blue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

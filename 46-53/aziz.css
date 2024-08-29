@@ -1,0 +1,89 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: auto;
+}
+
+.header{
+  display: flex;
+  align-items: center;  
+  background-color: #eee;
+  height: 60px;
+}
+
+li {
+  display: inline-block;
+}
+
+.links{
+  flex: 1;
+  padding: 10px;
+  text-align: end;
+  word-spacing: 5px;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  list-style: none;
+  margin-right: 10px;
+  background-color: #ddd;
+  /* word-spacing: 10px; */
+}
+
+.page .header ul li {
+  margin-right: 5px;
+}
+
+.logo {
+  background-color: #ddd;
+  width: 100px;
+  margin-right: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.main-area {
+  display: flex;
+  padding: 10px;
+  padding-top: 0px;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.main-area div{
+  background-color: #ddd;
+  padding: 10px;
+  height: 300px;
+}
+
+.content {
+  width: 65%;
+  margin-right: 10px;
+}
+
+.sidebar {
+  width: 35%;
+}
+
+.footer {
+  display: flex;
+  background-color: #eee;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+}
+
+.footer div {
+  background-color: #ddd;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.design {
+  text-align: end;
+}

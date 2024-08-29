@@ -1,0 +1,35 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #eee;
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;  
+  position: relative;
+  letter-spacing: 5px;
+}
+
+div::before {
+  content: "";
+  background-color: #ddd;
+  width: 620px;
+  height: 120px;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  right: -10px;
+  background-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%, yellow 60%, yellow 80%, black 80%);
+}
+
+div::first-letter {
+  color: red;
+}
