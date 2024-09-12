@@ -1,0 +1,70 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050303;
+  padding: 10px;
+  height: 100vh;
+  display: grid;
+
+  gap: 25px;
+  text-transform: capitalize;
+}
+
+div {
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 5px;
+  height: 100px;
+}
+
+p:not(.para) {
+  margin-top: -10px;
+}
+
+.para {
+  font-size: 20px;
+  font-weight: bold
+}
+
+@media (max-width: 767px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+  }
+  .p1 {
+    grid-column: 1 /span 3;
+  }
+  .para {
+    color: red;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px); 
+  }
+  .p1,
+  .p4 {
+    grid-column: 1 / span 2;
+  }
+  .para {
+    color: rgb(50, 170, 192);
+  }
+}
+
+

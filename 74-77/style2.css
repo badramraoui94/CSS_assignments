@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: solid 5px black;
+  border-bottom: solid 5px transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: doran 1s linear 0s infinite normal none;
+  animation-play-state: paused;
+}
+
+div::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: solid 5px red;
+  border-bottom: solid 5px transparent;
+  border-radius: 50%;
+  animation: doran 3s linear 0s infinite normal none;
+  animation-play-state: paused;
+}
+
+div::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: solid 5px gray;
+  border-bottom: solid 5px transparent;
+  border-radius: 50%;
+  animation: doran 2s linear 0s infinite normal none;
+  animation-play-state: paused;
+}
+
+@keyframes doran {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+div:hover,
+div:hover::before,
+div:hover::after {
+  animation-play-state: running;
+}

@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #ddd;
+  padding: 20px;
+  width: 400px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.arrow::before {
+  content: "";
+  z-index: 1;
+  background-color: transparent;
+  position: absolute;
+  border: 15px solid transparent;
+  border-bottom: #ddd solid 15px;
+  width: 0px;
+  height: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top::before {
+  top: -15px;
+}
+
+.right::before {
+  transform: translate(681%, -50%) rotate(90deg);
+}
+
+.bottom::before {
+  transform: translate(-50%, 97%) rotate(180deg);
+}
+
+.left::before {
+  transform: translate(-781%, -50%) rotate(-90deg);
+}

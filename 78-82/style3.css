@@ -1,0 +1,7 @@
+body {
+  font-size: 30px;
+}
+
+.parent > .baby:only-child {
+  color: red;
+}

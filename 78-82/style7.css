@@ -1,0 +1,8 @@
+body {
+  font-size: 20px;
+}
+  
+div:not(.no-need):not(.no-need-2) h3 + h3 + div {
+  font-weight: bold;
+  color: red;
+}

@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 20px Arial, sans-serif;
+  /* padding: 10px; */
+}
+
+ul {
+  background-color: #eee;
+  padding: 10px;
+  /* padding-left: 25px; */
+  width: 500px;
+  margin: auto;
+  overflow: hidden;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+li {
+  counter-increment: name;
+  position: relative;
+}
+
+li::before {
+  content: counter(name);
+  position: absolute;
+  background-color: #ddd;
+  padding: 10px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-weight: bold;
+  text-align: center;
+  top: 9px;
+  left: 9px;
+}
+
+body > ul > li:not(:last-of-type) {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 5px;
+  padding-left: 55px;
+}
+
+body > ul:nth-child(4) {
+  background-color: #ddd;
+  padding-left: 5px;
+}

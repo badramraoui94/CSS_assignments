@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .container {
+  background-color: #ddd;
+  height: 60vh;
+  width: 580px;
+  height: 350px;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 60px;
+} */
+  
+.container {
+  background-color: #ddd;
+  width: 480px;
+  height: 350px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container div {
+  background-color: black;
+  height: 100%;
+}
+
+.e,
+.l {
+  display: flex;
+  flex-flow: column wrap;
+  width: 200px;
+  position: relative;
+}
+
+.e {
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
+
+.l {
+  align-content: flex-end;
+}
+
+.e .div1 {
+  background-color: #ddd;
+  width: 80%;
+  height: 30%;
+}
+
+.e .div2 {
+  background-color: #ddd;
+  width: 80%;
+  height: 30%;
+}
+
+.l .div1 {
+  width: 79%;
+  height: 87%;
+  background-color: #ddd;
+}
+
+.e::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  z-index: 1;
+  top: 6.5px;
+  right: 6.5px;
+  animation: moveAround 2s linear 0s infinite;
+}
+
+.l::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  z-index: 1;
+  bottom: 6.5px;
+  right: 6.5px;
+}
+
+/* @keyframes an1 {
+  0% {right: 6.5px; top: 6.5px;}
+  10% {left: 6.5px; top: 6.5px;}
+  20% {left: 6.5px; top: 149.5px;}
+  30% {right: 6.5px; top: 149.5px;}
+  40% {left: 6.5px; top: 149.5px;}
+  50% {right: 6.5px; top: 149.5px;}
+} */
+
+@keyframes moveAround {
+  0% {
+    top: 6.5px;
+    right: 6.5px;
+  }
+  12.5% {
+    top: 6.5px;
+    left: 6.5px;
+    /* transform: translateX(-50%); */
+  }
+  25% {
+    top: 149.5px;
+    right: 6.5px;
+    /* left: auto; */
+  }
+  37.5% {
+    top: 50%;
+    right: 6.5px;
+    transform: translateY(-50%);
+  }
+  50% {
+    bottom: 6.5px;
+    right: 6.5px;
+    top: auto;
+    transform: none;
+  }
+  62.5% {
+    bottom: 6.5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  75% {
+    bottom: 6.5px;
+    left: 6.5px;
+    right: auto;
+    transform: none;
+  }
+  87.5% {
+    top: 50%;
+    left: 6.5px;
+    transform: translateY(-50%);
+  }
+  100% {
+    top: 6.5px;
+    left: 6.5px;
+  }
+}
