@@ -4,14 +4,12 @@
 
 body {
   font: 20px Arial, sans-serif;
-  /* padding: 10px; */
 }
 
-ul {
+ul:not(:last-child) {
   background-color: #eee;
   padding: 10px;
-  /* padding-left: 25px; */
-  width: 500px;
+  width: 600px;
   margin: auto;
   overflow: hidden;
   list-style-position: inside;
@@ -23,7 +21,7 @@ li {
   position: relative;
 }
 
-li::before {
+body > ul > li:not(:last-of-type):before {
   content: counter(name);
   position: absolute;
   background-color: #ddd;
@@ -37,6 +35,19 @@ li::before {
   left: 9px;
 }
 
+body > ul > li:last-of-type::before {
+  content: "4";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  padding: 10px;
+  line-height: 15px;
+  font-weight: bold;
+  text-align: center;
+  top: 10px;
+  left: 14px;
+}
+
 body > ul > li:not(:last-of-type) {
   background-color: white;
   padding: 15px;
@@ -44,7 +55,42 @@ body > ul > li:not(:last-of-type) {
   padding-left: 55px;
 }
 
-body > ul:nth-child(4) {
+body > ul > li:last-of-type {
   background-color: #ddd;
-  padding-left: 5px;
+  padding: 15px;
+  padding-left: 60px;
+}
+
+body > ul > li:last-of-type ul li {
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 5px;
+  padding-left: 60px;
+  counter-increment: test;
+  position: relative;
+}
+
+body > ul > li:last-of-type ul li:before {
+  position: absolute;
+  content: "4." counter(test);
+  width: 25px;
+  height: 15px;
+  padding: 10px;
+  line-height: 15px;
+  font-weight: bold;
+  text-align: center;
+  top: 9px;
+  left: 8px;
+  background-color: rgb(3, 163, 147);
+  color: white;
+}
+
+li:last-of-type:before {
+  background-color: white;
+}
+
+li:last-of-type ul {
+  padding-left: 0px;
+  padding-top: 15px;
+  list-style-type: none;
 }

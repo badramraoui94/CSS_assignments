@@ -1,0 +1,62 @@
+html {
+  font: 20px Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  width: fit-content;
+  padding: 10px;
+  margin: 30px 200px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  text-align: start;
+}
+
+a:not([class])::before {
+  content: "Name: Elzero Courses | URL: https://www.elzero.courses/";
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35.7%, -50%);
+  background-color: rgb(82, 82, 255);
+  padding: 10px;
+  width: fit-content;
+  border-radius: 4px;
+  text-wrap: nowrap;
+}
+
+.url::before {
+  content: "Name: Google | URL: https://google.com";
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(82, 82, 255);
+  padding: 10px;
+  width: fit-content;
+  border-radius: 4px;
+  text-wrap: nowrap;
+}
+
+.link::before {
+  content: "Name: Elzero Academy | URL: https://elzero.org/";
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-42.3%, -50%);
+  background-color: rgb(82, 82, 255);
+  padding: 10px;
+  width: fit-content;
+  border-radius: 4px;
+  text-wrap: nowrap;
+}
