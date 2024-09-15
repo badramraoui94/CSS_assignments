@@ -1,0 +1,86 @@
+html {
+  font: 15px Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #eee;
+  padding: 40px;
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  text-transform: capitalize;
+}
+
+.container div:not(.button) {
+  border: #ddd 1px solid;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
+  padding: 30px 20px;
+  flex-basis: 32%;
+  position: relative;
+  color: gray;
+}
+
+.button {
+  width: 50%;
+  transform: translateX(50%);
+  padding: 20px;
+  background-color: rgb(85, 85, 254);
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.business::before {
+  position: absolute;
+  content: "most popular";
+  width: 80%;
+  height: 40px;
+  background-color: rgb(85, 85, 254);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  top: -20px;
+  transform: translateX(-50%);
+  z-index: 1;
+  font-size: 13px;
+}
+
+.business::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  background-color: transparent;
+  top: -20px;
+  transform: translateX(-50%);
+  border-left: transparent 20px solid;
+  border-right: transparent 20px solid;
+  border-bottom: rgb(0, 0, 210) 20px solid;
+}
+
+.container p:first-of-type {
+  font-weight: bold;
+  font-size: 25px;
+  color: initial;
+}
+
+.price {
+  font-size: 40px;
+  color: rgb(85, 85, 254);
+}
+
+.dlr {
+  color: rgb(85, 85, 254);
+  font-size: 20px;
+  position: absolute;
+  left: 95px;
+  top: 114px;
+}

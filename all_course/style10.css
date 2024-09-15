@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  background-color: transparent;
+  margin: 20px auto;
+  width: 800px;
+  height: 800px;
+  border: 2px solid;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}

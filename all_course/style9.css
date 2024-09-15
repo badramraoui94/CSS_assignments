@@ -1,0 +1,20 @@
+html {
+  font : 50px Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text {
+  margin: 20px auto;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to bottom, red, blue);
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: transparent;
+  background-clip: text;
+}
+
