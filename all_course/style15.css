@@ -1,0 +1,16 @@
+html {
+  font: 40px Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  background-color: #ddd;
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  color: white;
+  -webkit-text-stroke: 3px black;
+}

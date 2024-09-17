@@ -1,0 +1,32 @@
+html {
+  font: 15px Arial, sans-serif;
+  background-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  background-color: white;
+  padding: 20px;
+  width: 800px;
+  margin: 20px auto;
+  position: relative;
+  column-count: 3; 
+  column-gap: 20px;
+  line-height: 2;
+}
+
+div::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  width: 260px;
+  height: 110px;
+  border-left: dashed 2px black;
+  border-right: dashed 2px black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-54%, -50%);
+}

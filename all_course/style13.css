@@ -50,7 +50,7 @@ html {
 .container div::before {
   position: absolute;
   content: "";
-  background-color: gray;
+  background-color: rgb(152, 152, 152);
   width: 20px;
   height: 20px;
   border-radius: 50%;
