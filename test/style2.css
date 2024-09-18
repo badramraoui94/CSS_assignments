@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #eee;
+  height: 800px;
+  margin: 20px auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap : 10px;
+}
+
+.container div {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.one {
+  grid-row: 1 / span 3;
+}
+
+.four {
+  grid-column: 2 / span 2;
+}

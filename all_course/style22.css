@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  height: 800px;
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.container div {
+  background-color: orangered;
+  border-radius: 20px;
+  /* background-image: url("../5-8/css-assignment-5-8.png"); */
+}
+
+.one {
+  background-image: url("../img/asphalt.jpeg");
+  grid-row: 1 / span 2;
+}
+
+.two {
+  background-image: url("../img/images.png");
+}
+
+.three {
+  grid-column: 3 / span 2;
+  background-image: url("../img/images\ \(1\).png");
+}
+
+.eight {
+  grid-column: 3 / span 2;
+  background-image: url("../img/images\ \(3\).png");
+}
+
+.four {
+  grid-row: 2 / span 2;
+}
+
+.five {
+  background-image: url("../img/images\ \(2\).png");
+  background-repeat: no-repeat;
+}
